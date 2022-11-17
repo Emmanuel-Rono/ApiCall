@@ -5,7 +5,7 @@ import com.example.apicall.ui.constants
 import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
-class retrofitInstance
+class RetrofitInstance
 {
     companion object
     {
@@ -17,5 +17,8 @@ class retrofitInstance
             .build()
     }
     val api by lazy {
-        retrofit.create(ApiService::class.java)}
+       retrofit.create(ApiService::class.java)
+
+}
+
 }

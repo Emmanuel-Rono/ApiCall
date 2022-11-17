@@ -13,7 +13,7 @@ interface ApiService {
         //Telling that this  is a Get request
         //Endpoint is photos-photos will be appended to the base url
         @GET("photos")
-        fun getPhotos():String
+        suspend fun getPhotos():String
 
     }
 
